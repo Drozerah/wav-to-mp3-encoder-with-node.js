@@ -1,7 +1,7 @@
 .DS_Store
 node_modules
-/mp3
-/wave
+mp3
+wav
 
 # local env files
 .env.local
