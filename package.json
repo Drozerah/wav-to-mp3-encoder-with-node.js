@@ -1,0 +1,22 @@
+{
+  "name": "wav-to-mp3-encoder-with-node.js",
+  "version": "1.0.0",
+  "description": "Encode all your wav files to mp3",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "prepare": "bash -c 'mkdir -p ./{wav,mp3}'",
+    "cleanMp3": "npm run cleanMp3:rm && npm run cleanMp3:mkdir && echo Done: the ./mp3 directory is clean !",
+    "cleanMp3:rm": "rm -rf ./mp3",
+    "cleanMp3:mkdir": "bash -c 'mkdir -p ./mp3'",
+    "cleanWav": "npm run cleanWav:rm && npm run cleanWav:mkdir && echo Done: the ./wav directory is clean !",
+    "cleanWav:rm": "rm -rf ./wav",
+    "cleanWav:mkdir": "bash -c 'mkdir -p ./wav'"
+  },
+  "keywords": [],
+  "author": "Drozerah",
+  "license": "ISC",
+  "dependencies": {
+    "node-lame": "^1.2.0"
+  }
+}
